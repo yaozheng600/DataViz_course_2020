@@ -1,7 +1,7 @@
 [click here to see the prototype]( https://yaozheng600.github.io/DataViz_course_2020/)
 
-# Project Documentation
-## 1. Concepts of our work      
+# PROJECT DOCUMENTATION
+## 1. CONCEPTS of OUR WORK     
 Our work is mainly to study the changes in the stock market during the epidemic, and to explore the reasons through data visualization. And make predictions on the future development of the stock market and give investment advices.
 ## 2. Data sources
 We use COVID-19 data provided by [Data on COVID-19 (coronavirus) by Our World in Data](https://ourworldindata.org/coronavirus). And data of stock provided by:[Yahoo Finance](https://finance.yahoo.com) and [Investing.com](https://www.investing.com). We crawling the following data from this two webseit:
