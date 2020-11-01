@@ -2,8 +2,8 @@
 
 # PROJECT DOCUMENTATION
 ## 1. CONCEPTS of OUR WORK     
-Our work is mainly to study the changes in the stock market during the epidemic, and to explore the reasons through data visualization. And make predictions on the future development of the stock market and give investment advices.
-## 2. Data sources
+Our work is mainly to study the changes in the stock market during the epidemic, focus on the situation of global stock market and explore the reasons of significant differences of stock development among countries and companies through data visualization. And give investment advices.
+## 2. DATA SOURCES
 We use COVID-19 data provided by [Data on COVID-19 (coronavirus) by Our World in Data](https://ourworldindata.org/coronavirus). And data of stock provided by:[Yahoo Finance](https://finance.yahoo.com) and [Investing.com](https://www.investing.com). We crawling the following data from this two webseit:
 * 62 general equity market indices from 43 countries
 * 500 Companies’ history and info from US (S&P 500)
@@ -15,7 +15,7 @@ license information:
 * [Yahoo Finance](https://github.com/scheb/yahoo-finance-api/blob/4.x/LICENSE)
 * [Investing.com](https://www.investing.com/about-us/terms-and-conditions#special_conditions_money)
 
-## 3. design decisions
+## 3. DESIGN DECISIONS
 ### 3.1 Domain problem characterization        
 The target users are stock market investors and people who interested in the economy during the COVID-19 period. The domains of interest are the stock market and the epidemic. The questions are how to invest during the epidemic, and to explore the state of the world economy through the stock market. The data related to the problem is divided into two aspects. One is the data regarding to the epidemic situation in each country, including new cases, national policies, medical conditions, and aging degree etc. The second is the price changes at different levels of the stock market, including national stocks, stock sectors, and company stocks. 
 ### 3.2 Abstraction    
@@ -40,6 +40,6 @@ The first task is not only the stock market changes over time, but also the comp
 In Task 2, we use a scatter plot to show the correlation between the stock market and the epidemic in order to find clusters and outliers. The x-axis represents a quantified factor affecting the epidemic, the y-axis represents the rate of change of the stock market, and each scattered point represents a country. We selected 6 influencing factors: stringency index, hospital beds per thousand, human development index, gdp per capita, median age and positive rate. We use these 6 scatter plots as sub-charts to form a small multiples together. We added geografical zooming to each sub-chart to clearly show clusters and outliers, or focus on the details of the data in a specific country.       
 Regarding the task 3, we first thought of using a pie chart to show the share of each sector. However, there are 11 sections in total, and there is not much difference between the percentages of some sections, the data cannot be displayed well. We still choose grouped bar chart in the end. The x-axis represents 11 sectors, and the y-axis represents the stock market price. Each set of bars displays the start time and end time of the price in this sector. We can not only compare the shares by the length of the bars, but also show the changes of each sector through the changes in prices within the group. At this time, we are still not sure about which country's sector data will be displayed. It depends on the results of our analysis of the data after completing tasks 1 and 2.       
 Task 4 and Task 2 are similar in structure. So we use the same visual encoding. The small multiples represent different company descriptions in the vertical direction, and different countries in the horizontal direction to create a control group. Regarding the interaction, you can still use zoom in to discover clusters, or focus on an outlier to get detailed information by hover your mouse.      
-## 4. possible improvements        
+## 4. POSSIBLE IMPROVEMENTS        
 You may have noticed that we have a problem in the design of the interaction: if you don't read the text, it is difficult for readers to think of clicking each bar in the bar chart to use the filter. To solve this problem, we consider that we can set check boxes to filter different countries. In this way, the readers can see  the interactions they can use.
-## 5. user guide of the prototype
+## 5. USER GUIDE of THE PROTOTYPE
