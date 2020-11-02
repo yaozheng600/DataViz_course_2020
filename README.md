@@ -43,4 +43,4 @@ Task 4 and Task 2 are similar in structure. So we use the same visual encoding. 
 ## 4. POSSIBLE IMPROVEMENTS        
 You may have noticed that we have a problem in the design of the interaction: if you don't read the text, it is difficult for readers to think of clicking each bar in the bar chart to use the filter. To solve this problem, we consider that we can set check boxes to filter different countries. In this way, the readers can see  the interactions they can use.
 ## 5. USER GUIDE of THE PROTOTYPE
-[![Watch the video](https://img.youtube.com/vi/7z7VXcybZ7c/maxresdefault.jpg)](https://youtu.be/7z7VXcybZ7c)
+[![Watch the video](https://img.youtube.com/vi/7z7VXcybZ7c/hqdefault.jpg)](https://youtu.be/7z7VXcybZ7c)
